@@ -7,7 +7,7 @@ docker run -d --rm -it \
         -v $PWD:/workspaces/project \
         -v $PWD/opt:/opt \
         -w /workspaces/project \
-        --hostname vm-${hostname} \
+        --hostname vm-${HOSTNAME} \
         --network=host \
         --name my-proj-dx \
         my-proj:${USER} bash
